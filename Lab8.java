@@ -15,7 +15,7 @@ class Produtor_Consumidor{
         System.out.println("Valor do elemento na posicao " 
     +i+"= " + buffer[i]);
         }
-        System.out.println("\n\n");
+        System.out.println("\n");
     }
     //Produtor
     public synchronized void Insere(){
@@ -68,8 +68,8 @@ class T extends Thread{
     }
 }
 class P_C{
-    static final int P = 1;
-    static final int C = 1;
+    static final int P = 10;
+    static final int C = 10;
     public static void main (String[] args) {
         //reserva espaço para um vetor de threads
         Thread[] threads = new Thread[P+C];
